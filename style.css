@@ -97,7 +97,7 @@ h1{
 /* HEADER */
 
 header{
-    height: 80px;
+    height: 60px;
 
     position: fixed;
     top: 0;
@@ -124,6 +124,10 @@ header{
 
 .header-menu a{
    padding-left: 20px;
+}
+
+header img{
+    width:80% ;
 }
 
 /* SECTION INFO CARD */
@@ -154,8 +158,9 @@ header{
 }
 
 .card{
-    min-height: 300px;
+    min-height: 270px;
     background-color: #B5DDFF;
+    border-radius: 20px;
     
 }
 
