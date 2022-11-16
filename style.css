@@ -26,6 +26,7 @@ img{
 
 ul{
     list-style-type: none;
+ 
 }
 
 a{
@@ -133,27 +134,29 @@ header img{
 /* SECTION INFO CARD */
 
 .row{
-    display: flex;
-    flex-wrap: wrap;
+    /* display: flex;
+    flex-wrap: wrap; */
     border: 1px dashed black;
+    margin:0 -15px;
 
 }
 
 .infocard .row{
-    gap: 20px;
+    /* gap: 20px; */
     margin-top: 120px;
 }
 
 .double-col{
-    min-width:calc(66.666%);
+    min-width:calc(100% / 3 * 2);
     border: 1px dashed black;
 
 }
 
 .col{
     
-    flex-basis: calc(100%/3 - 20px);
+    flex-basis: calc(100%/3);
     border: 1px dashed black;
+    padding: 0 15px;
 
 }
 
@@ -196,6 +199,8 @@ header img{
     width:60%;
 }
 
+
+
 /* TESTIMONIALS */
 .testimonials{
     padding-top: 50px;
@@ -205,4 +210,19 @@ header img{
 .testimonials-card{
     min-height: 220px;
     border-radius: 40px;
+}
+
+.testimonials-card img{
+    width: 250px;
+    clip-path: circle();
+}
+
+
+/* *********MEDIA QUERY */
+@media  screen and (min-width:768px) {
+    .row{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
 }
