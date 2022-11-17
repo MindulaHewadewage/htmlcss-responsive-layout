@@ -12,7 +12,7 @@
     max-width: 600px;
     width: 100%;
     margin: 0 auto;
-
+    padding: 0 2rem;
 }
 
 img{
@@ -36,6 +36,10 @@ h1{
 h2{
     font-size: 30px;
     color: #0084FD;
+}
+
+.dashed-border{
+    border: 1px dashed black;
 }
 
 
@@ -112,3 +116,34 @@ header{
     justify-content: space-between;
     align-items: center;
 }
+
+
+/* MAIN */
+section{
+    min-height: 400px;
+}
+
+section:nth-child(even){
+    background-color: #9792E4;
+}
+
+
+
+
+/* FOOTER */
+footer{
+    min-height: 200px;
+    background-color:#333333 ;
+}
+
+/* ***********
+MEDIA QUERY
+***********
+ */
+
+
+ /* DA TABLET IN POI */
+
+ @media screen and(min-widht:768px) {
+    
+ }
