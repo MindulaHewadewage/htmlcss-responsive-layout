@@ -149,26 +149,42 @@ section:nth-child(even){
 
 }
 
-.col-33{
-    flex-basis: calc(100% / 3);
-}
-
-.col-66{
-    flex-basis: calc(100% / 3 * 2);
-}
 
 .card{
-    min-height: 400px;
+
     background-color: #B5DDFF;
     border-radius: 20px;
     margin-bottom: 1rem;
+}
+
+.col-33 .card{
     padding: 3rem 2rem;
+}
+
+.first-card{
+    padding-top: 3rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+
 }
 
 .col-66 a{
     background-color: #0084FD;
     padding: 10px 60px;
     border-radius: 30px;
+}
+
+.col-33 .description{
+    text-align: center;
+}
+
+.col-33 .description i{
+    color: #0084FD;
+}
+
+.phone-image img{
+    width: 70%;
+
 }
 
 
@@ -196,7 +212,7 @@ footer{
 
     .row{
         display: flex;
-        flex-direction: row;
+        flex-direction:row;
         flex-wrap: wrap;
         margin: -1rem;
     }
@@ -204,16 +220,36 @@ footer{
     .col{
         padding: 1rem;
     }
+    
+    .col-33{
+        flex-basis: calc(100% / 3);
+    }
+
+    .col-66{
+        flex-basis: calc(100% / 3 * 2);
+    }
+
+    
 
  }
 
 
  /* DA LAPTOP IN POI */
 
- @media screen and (min-width:990px) {
+ @media screen and (min-width:992px) {
     .container{
         max-width: 960px;
-        padding: 0 2rem;
+
+    }
+
+
+ }
+
+ /* DESKTOP */
+ @media screen and (min-width:1200px) {
+    .container{
+        max-width: 1050px;
+
     }
 
     .navbar-menu-bars{
@@ -224,4 +260,11 @@ footer{
     header .navbar-menu-list{
         display: flex;
     }
+
+    .first-card{
+        display: flex;
+    }
  }
+
+
+
